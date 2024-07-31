@@ -16,7 +16,7 @@ public class Main {
 
         int stepCode = 20;
         while (stepCode != 0) {
-            System.out.println("1.register, 2.login");
+            System.out.println("1.Register  , 2.Sign in ,  3.Exit");
             stepCode = scannerInt.nextInt();
             switch (stepCode) {
                 case 1 -> {
@@ -45,9 +45,9 @@ public class Main {
         user.setAge(age);
         User user1 = userService.addUser(user);
         if (user1 == null) {
-            System.out.println("User allaqachon qo'shilgan");
+            System.out.println("User already exist");
         } else {
-            System.out.println("User muvaffaqiyatli qo'shildi");
+            System.out.println("User successfully added");
         }
     }
 
@@ -58,9 +58,9 @@ public class Main {
         String password = scannerStr.nextLine();
         User user = userService.login(username, password);
         if (user == null) {
-            System.out.println("Username yoki password xato");
+            System.out.println("Something is wrong");
         } else {
-            System.out.println("Muvaffaqiyatli login");
+            System.out.println("Welcome");
         }
     }
 }
