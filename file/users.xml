@@ -1,0 +1,18 @@
+<users>
+<User>
+  <id>00000000-0000-0000-0000-000000000000</id>
+  <name>nodir</name>
+  <username>nono</username>
+  <password>123</password>
+  <age>33</age>
+</User>
+
+<User>
+  <id/>
+  <name>salom</name>
+  <username>salim</username>
+  <password>123</password>
+  <age>33</age>
+</User>
+
+</users>
